@@ -14,6 +14,7 @@ if (localStorage.getItem('todo')) {
 }
 
 addText.addEventListener("keyup", function (event) {
+    if (!addText.value) return;
     if (event.keyCode === 13) {
         event.preventDefault();
 

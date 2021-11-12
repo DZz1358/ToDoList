@@ -112,3 +112,27 @@ input[type="checkbox"]:checked + label:before {
     color: white;
     cursor: pointer;
 }
+
+@media (min-width: 400px) and (max-width: 485px) {
+    input[type="text"] {
+        width: 326px;
+    }
+    .add {
+        width: 350px;
+    }
+}
+@media (min-width: 300px) and (max-width: 399px) {
+    input[type="text"] {
+        width: 246px;
+    }
+    .add {
+        width: 270px;
+    }
+    .todo li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .todo_list {
+        padding: 15px;
+    }
+}
